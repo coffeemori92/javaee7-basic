@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>sample06</title>
+        <h:outputStylesheet library="css" name="mystyle.css" />
+    </h:head>
+    <h:body>
+        <h:panelGrid columns="2" cellspacing="0" rules="all" border="1" columnClasses="c1,c2">
+            <f:facet name="header">이하의 내용을 접수</f:facet>
+            메일<h:outputText value="#{bb.mail}" />
+            질문<h:panelGroup><pre>#{bb.msg}</pre></h:panelGroup>
+        </h:panelGrid>
+    </h:body>
+</html>
+

@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>sample07</title>
+    </h:head>
+    <h:body>
+        <h1>커맨드 버튼 사용 예</h1>
+        <h:form>
+            입력<h:inputText value="#{bb.sample07Data}" />
+            <h:panelGrid columns="4" columnClasses="c1,c2">
+                ①<h:commandButton value="송신" />
+                ②<h:commandButton value="리셋" type="reset" />
+                ③<h:commandButton value="Javascript" type="button" onclick="alert('hi')" />
+                ④<h:commandButton value="송신" action="#{bb.sample07Next()}" />
+                ⑤<h:commandButton image="/resources/images/book1.jpg" action="#{bb.sample07Next()}" />
+                ⑥<h:commandButton value="Javascript+송신" action="#{bb.sample07Next()}" onclick="alert('hi')" />
+            </h:panelGrid>
+            <h:link outcome="/sample07/output">
+                リンク
+                <f:param name="hello" value="hi" />
+            </h:link>
+        </h:form>
+    </h:body>
+</html>
+

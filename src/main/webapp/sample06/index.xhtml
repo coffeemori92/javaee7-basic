@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>sample06</title>
+        <h:outputStylesheet library="css" name="mystyle.css" />
+    </h:head>
+    <h:body>
+        <h1>화면입력</h1>
+        <h:form>
+            <h:panelGrid columns="2" columnClasses="col">
+                메일<h:inputText value="#{bb.mail}" size="30" />
+                질문<h:inputTextarea value="#{bb.msg}" cols="30" rows="5" />
+            </h:panelGrid>
+            <h:commandButton value="송신" action="#{bb.sample06Next()}" />
+        </h:form>
+    </h:body>
+</html>
+

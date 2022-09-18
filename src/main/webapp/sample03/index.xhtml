@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>sample03</title>
+        <h:outputStylesheet library="css" name="mystyle.css" />
+        <h:outputScript library="js" name="main.js" target="body" />
+    </h:head>
+    <h:body>
+        <h1>텍스트</h1>
+        <p>
+            <h:graphicImage 
+                library="images" 
+                name="book1.jpg"
+                onmouseover="mouseRollover(this)"
+                onmouseout="mouseOut(this)"
+            />
+        </p>
+        <ul>
+            <li>A</li>
+            <li>B</li>
+            <li>C</li>
+        </ul>
+        <p>상세는<h:outputLink value="https://www.google.com/">이쪽</h:outputLink></p>
+        <h:form>
+            <h:commandButton value="재표시" action="#{bookBean.next()}" />
+        </h:form>
+    </h:body>
+</html>
+
