@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        <h1>conversation scope (1)</h1>
+        <h:form>
+            <h:panelGrid columns="2">
+                이름<h:outputText value="#{deliveryBean.name}" />
+                주소<h:outputText value="#{deliveryBean.address}" />
+                상품명<h:outputText value="#{deliveryBean.product}" />
+                수량<h:outputText value="#{deliveryBean.quantity}" />
+                <h:commandButton value="back" action="#{deliveryBean.goto_2()}" />
+                <h:commandButton value="finish" action="#{deliveryBean.goto_0()}" />
+            </h:panelGrid>
+        </h:form>
+    </h:body>
+</html>
+
